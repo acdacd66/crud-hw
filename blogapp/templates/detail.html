@@ -1,0 +1,17 @@
+<h1>Detail Post</h1>
+
+<p>
+    <h2>제목 : {{blog.title}}</h2>
+    <p>작성자 : {{blog.writer}}</p>
+
+    
+        본문
+        <br>
+        <p> {{blog.body}}</p>
+   
+
+<br>
+<a href="{% url 'home' %}"> home </a>
+<br>
+<a href="{% url 'edit' blog.id %}">수정하기</a>
+<a href="{%url 'delete' blog.id %}">삭제하기</a>
